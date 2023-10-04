@@ -21,3 +21,31 @@ checkboxList.forEach((checkbox) => {
     }
 })
 
+document.querySelector("#checkbox-all").onchange = function() {
+    checkboxList.forEach((checkbox) => {
+        checkbox.checked = this.checked;
+        if(this.checked) {
+            checkbox.parentNode.parentNode.classList.add("selected-row");
+        } else {
+            checkbox.parentNode.parentNode.classList.remove("selected-row");
+        }
+    })
+    if(this.checked) {
+        document.querySelector("div.group-op").classList.remove("nodisplay");
+    } else {
+        document.querySelector("div.group-op").classList.add("nodisplay");
+
+    }
+}
+
+document.querySelector(".group-op-delete").onclick = function() {
+    const elementsToRemove = [];
+    checkboxList.forEach((checkbox) => {
+        if(checkbox.checked) {
+            elementsToRemove.push(checkbox.parentNode.parentNode);
+        }
+    })
+    elementsToRemove.forEach((element) => {
+        element.parentNode.removeChild(element);
+    });
+}
