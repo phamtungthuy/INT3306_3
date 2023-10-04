@@ -1,0 +1,25 @@
+#table {
+	border: solid 1px #000000;
+	border-collapse:collapse;
+}
+#table td, th {
+	border: solid 1px #000000;
+}
+#table thead {
+	background-color:#90f0d0;
+}
+#table tr.odd-row {
+	background-color:#d8d7d7;
+}
+#table tr.even-row {
+	background-color:#b6b6b6;
+}
+#table tr.selected-row {
+    background-color:#f4faa8;
+}
+.nodisplay {
+    display:none;
+}
+div.group-op-container {
+    height:30px;
+}
