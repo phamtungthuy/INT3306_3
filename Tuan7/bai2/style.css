@@ -1,0 +1,58 @@
+table { 
+    margin-left: auto; 
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 10px 0;
+} 
+
+td {
+    padding: 5px;
+    
+}
+
+
+
+input {
+    display: inline-block;
+}
+
+input[type="button"]:hover {
+    transform: scale(1.05); /* Phóng to 5% khi hover */
+    cursor: pointer;
+}
+
+/* Hiệu ứng khi active (nhấn xuống) */
+input[type="button"]:active {
+    transform: scale(0.95); /* Thu nhỏ 5% khi active (click) */
+}
+
+input[type="button"] { 
+    width: 200px; 
+    padding: 15px 30px; 
+    background-color: #f1f3f4; 
+    color: #000; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+} 
+  
+input[type="text"] { 
+    padding: 20px 30px; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    border: 2px solid black;
+    width: 93%;
+    text-align: right;
+}
+
+input.grey-background {
+    background-color: #dadce0;
+}
+
+input.primary {
+    background-color: #4285f4;
+    color: #fff;
+}
