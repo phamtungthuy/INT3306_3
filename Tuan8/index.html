@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .cell {
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            display: inline-block;
+
+        }
+        .start {
+            background-color: red;
+        }
+        .end {
+            background-color: green;
+        }
+        .wall {
+            background-color: black;
+        }
+        .path {
+            background-color: yellow;
+        }
+        .start.path {
+            background-color: red;
+        }
+        .end.path {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="start()">Start</button>
+    <button onclick="reset()">Reset</button>
+    <div id="maze"></div>
+
+    <script src="./astart.js"></script>
+</body>
+</html>
